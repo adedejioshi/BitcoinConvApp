@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#C2185B</color>
+    <color name="colorPrimaryDark">#8C0032</color>
+    <color name="colorAccent">#E91E63</color>
+    <color name="background">#379E9E9E</color>
+    <color name="negative_value">#FF0000</color>
+    <color name="positive_value">#F24CAF50</color>
+    <color name="progress1">#00BCD4</color>
+    <color name="progress2">#F28BC34A</color>
+    <color name="progress3">#E6FF9800</color>
+    <color name="progress4">#F44336</color>
+    <color name="status_bar">#9E9E9E</color>
+</resources>

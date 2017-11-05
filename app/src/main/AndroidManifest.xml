@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gsa.bitcoinconvapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bitttt"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+
+        <provider
+            android:name=".data.CurrencyProvider"
+            android:authorities="com.example.gsa.bitcoinconvapp"
+            android:exported="false" />
+
+        <activity
+            android:name=".AddCardActivity"
+            android:label="Add to Watchlist"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gsa.bitcoinconvapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ConversionActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gsa.bitcoinconvapp.MainActivity" />
+        </activity>
+        <activity android:name=".NetworkProblemActivity" />
+    </application>
+
+</manifest>
